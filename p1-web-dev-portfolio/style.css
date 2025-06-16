@@ -151,7 +151,7 @@ header {
     text-align: center;
     font-family: "Martel", serif;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     
     
 }
@@ -219,10 +219,9 @@ header {
     text-align: center;
     font-family: "Martel", serif;
     font-size: 30px;
-    margin-bottom: 30px;
-    
-    
+    margin-bottom: 20px; 
 }
+
 .skills_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -264,4 +263,90 @@ header {
 .skill_card p {
     text-align: center;
     margin: 0 40px;
+}
+
+#contact {
+    min-height: 70vh;
+    padding: 100px 20px 50px;
+    font-family: "Raleway", sans-serif;
+    scroll-margin-top: 100px;
+}
+
+#contact h2  {
+    text-align: center;
+    font-family: "Martel", serif;
+    font-size: 30px;
+    margin-bottom: 20px; 
+}
+
+.contact_container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.contact_title,
+.contact_links,
+.contact_info {
+    flex: 1;
+    min-width: 200px;
+    padding: 30px;
+}
+
+.contact_title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact_title span {
+    font-family: "Martel", serif;
+    font-size: 50px;
+    line-break: 3;
+    color: #be95be;
+    line-height: 1; 
+    letter-spacing: -1px; 
+    margin: 0; 
+    
+}
+
+.contact_info,
+.contact_links {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.contact_links h3,
+.contact_info h3 {
+    margin-bottom: 10px;
+    color: #be95be;
+    font-size: 1.5rem;
+    
+}
+
+.contact_info i,
+.contact_links i {
+    font-size: 1.2em;
+    width: 25px; 
+    text-align: center;
+    color: #be95be; 
+    margin-right: 10px;
+}
+
+.contact_info a, 
+.contact_links a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1em;
+}
+
+.contact_info a:hover, 
+.contact_links a:hover {
+    color: #be95bece;
+   
 }
