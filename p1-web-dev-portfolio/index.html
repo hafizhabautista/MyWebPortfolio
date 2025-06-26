@@ -6,24 +6,29 @@
     <title>Bautista Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/media.css">
+
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <ul class="nav_links left">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
+        <nav>
+            <input type="checkbox" class="checkBox" id="myCheck">
+            <label for="myCheck" class="checkButton">
+            <i class="fa fa-bars"></i>
+            </label>
 
-            <div class="logo">HB</div>
-
-            <ul class="nav_links right">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav_links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <div class="logo"><a href="#">HB</a></div>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+</header>
     <main id="home">
         <section id="about">
             <div class="about_container">
@@ -36,7 +41,7 @@
                 </p>
                 <div class="about_buttons">
                     <a href="blogs.html" class="btn" target="_blank">View Blogs</a>
-                    <a href="https://drive.google.com/file/d/1129QH5iJ2WEuRjArSg8PwK8gQz-DbzRB/view?usp=sharing" target="_blank" class="btn">View Resumé</a>
+                    <a href="assets/Bautista_ Résumé.pdf" target="_blank" class="btn" download>Download Resumé</a>
                 </div>
                 
             </div>
@@ -44,57 +49,92 @@
 
         <section id="projects">
             <h2>Projects I've made</h2>
+            <h3 class="project_subtitle">Works I've done</h3>
             <hr class="decorative-line">
             <div class="project_container">
                 <div class="project_card ">
-                <div class="project_img"><img src="assets/project placeholder.png" alt=""></div>
+                <div class="project_img"><img src="assets/project1.PNG" alt=""></div>
                 <div class="project_info">
-                    <h3 class="project_title">Title</h3>
-                    <p class="project_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum perferendis officia omnis, facilis </p>
+                    <h3 class="project_title">My Web Portfolio</h3>
+                    <p class="project_description">A fully responsive personal website built with HTML and CSS to showcase my skills, projects, and contact information. It follows fundamental UI/UX principles and features mobile responsiveness, clean design, and a consistent user experience across all screen sizes. </p>
                     <a href="" class="btn">Live Demo</a>
                 </div>
                 </div>
                 <div class="project_card ">
-                <div class="project_img"><img src="assets/project placeholder.png" alt=""></div>
+                <div class="project_img"><img src="assets/project2.png" alt=""></div>
                 <div class="project_info">
-                    <h3 class="project_title">Title</h3>
-                    <p class="project_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum perferendis officia omnis, facilis </p>
+                    <h3 class="project_title">Weather Dashboard</h3>
+                    <p class="project_description">The Weather Dashboard is a JavaScript-based web application that allows users to search for the current weather and a 5-day forecast for any city. It uses the OpenWeatherMap API to fetch real-time weather data. </p>
                     <a href="" class="btn">Live Demo</a>
                 </div>
                 </div>
                 <div class="project_card ">
-                <div class="project_img"><img src="assets/project placeholder.png" alt=""></div>
+                <div class="project_img"><img src="assets/project3.jpg" alt=""></div>
                 <div class="project_info">
-                    <h3 class="project_title">Title</h3>
-                    <p class="project_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum perferendis officia omnis, facilis </p>
+                    <h3 class="project_title">E-Commerce</h3>
+                    <p class="project_description">This project is a simple e-commerce platform built using ReactJS. It focuses on the frontend experience of an online store, allowing users to browse products, add items to a shopping cart, and complete a basic checkout process. </p>
+                    <a href="" class="btn">Live Demo</a>
+                </div>
+                </div>
+                <div class="project_card ">
+                <div class="project_img"><img src="assets/project4.jpg" alt=""></div>
+                <div class="project_info">
+                    <h3 class="project_title">Task Manager App</h3>
+                    <p class="project_description">A simple to-do list app built using JavaScript and localStorage. It includes features like adding, editing, and deleting tasks with persistent data across sessions. </p>
+                    <a href="" class="btn">Live Demo</a>
+                </div>
+                </div>
+                <div class="project_card ">
+                <div class="project_img"><img src="assets/project5.png" alt=""></div>
+                <div class="project_info">
+                    <h3 class="project_title">Real-time Chat App</h3>
+                    <p class="project_description">A basic real-time chat application using Firebase for backend and user authentication. It features group messaging, message timestamps, and mobile-first design. </p>
+                    <a href="" class="btn">Live Demo</a>
+                </div>
+                </div>
+                <div class="project_card ">
+                <div class="project_img"><img src="assets/project6.png" alt=""></div>
+                <div class="project_info">
+                    <h3 class="project_title">Simple Blog CMS</h3>
+                    <p class="project_description">A content management system for blogs built with HTML, CSS, and JavaScript. Users can create, edit, and delete posts with dynamic content rendering and Markdown support. </p>
                     <a href="" class="btn">Live Demo</a>
                 </div>
                 </div>
             </div>      
         </section>
 
-
         <section id="skills">
             <h2>Skills</h2>
+            <h3 class="skills_subtitle">Technologies I practice</h3>
             <hr class="decorative-line">
             <div class="skills_container">
                 <div class="skill_card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                     <h3>HTML</h3>
-                    <p class="skill_info">Built multiple responsive pages using semantic tags and accessibility best practices.</p>
+                    <p class="skill_info">Built multiple responsive pages using semantic tags and accessibility best practices for a better user experience. </p>
                 </div>
                 <div class="skill_card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                     <h3>CSS</h3>
-                    <p class="skill_info">Comfortable using Flexbox and Grid to create visually appealing layouts.</p>
+                    <p class="skill_info">Comfortable using Flexbox and Grid to create visually appealing layouts. Focus on clean, maintainable styling</p>
                 </div>
                 <div class="skill_card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                     <h3>JavaScript</h3>
-                    <p class="skill_info">Used JS to validate forms, toggle UI elements, and fetch data with APIs.</p>
+                    <p class="skill_info">Bring websites to life with interactive features, dynamic content updates, and seamless user experiences.</p>
                 </div>
                 <div class="skill_card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                    <h3>React</h3>
+                    <p class="skill_info">Develop dynamic and responsive user interfaces using React components, hooks, and state management.</p>
+                </div>
+                <div class="skill_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                    <h3>Bootstrap</h3>
+                    <p class="skill_info">Design and build mobile-first, responsive layouts quickly with Bootstrap's grid system, components, and utility classes.</p>
+                </div>
+                <div class="skill_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
                     <h3>Version Control</h3>
                     <p class="skill_info">Actively use version control project collaborations, including commits, branches, and pull requests.</p>
                 </div>
@@ -103,6 +143,7 @@
 
         <section id="contact">
             <h2>Contact</h2>
+            <h3 class="contact_subtitle">Where we can connect</h3>
             <hr class="decorative-line">
             <div class="contact_container">
                 <div class="contact_title">
@@ -112,8 +153,10 @@
                 </div>
                 <div class="contact_info">
                     <h3>Contact info</h3>
-                    <a href="mailto:bautistahafizha@gmail.com?subject=Portfolio%20Inquiry" target="_blank"><i class="fa-regular fa-envelope"></i>bautistahafizha@gmail.com</a>
+                    <div class="info_container">
+                        <a href="mailto:bautistahafizha@gmail.com?subject=Portfolio%20Inquiry" target="_blank"><i class="fa-regular fa-envelope"></i>bautistahafizha@gmail.com</a>
                     <p><i class="fa-solid fa-phone"></i>+63 916 598 0263</p>
+                    </div>
                 </div>
                 <div class="contact_links">
                     <h3>Find me at</h3>
@@ -123,11 +166,20 @@
                     <a href="https://www.facebook.com/ppyeace" target="_blank"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
                 </div>
             </div>
-
         </section>
+
     </main>
     <footer>
+        <div class="footer_container">
+            <p>&copy; Hafizha Faizah Bautista. All rights reserved.</p>
+            <div class="footer_links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
 
+            </div>
+        </div>
     </footer>
 </body>
 </html>
