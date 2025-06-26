@@ -1,7 +1,8 @@
 
-/* FOR MOBILE VIEIW */
+/* FOR MOBILE VIEW */
 
 @media screen and (max-width: 480px) {
+
     main {
         padding-top: 60px;
     }
@@ -29,6 +30,12 @@
 
     /* ABOUT SECTION */
 
+    #about {
+        padding-top: 20px; 
+        min-height: auto;
+        margin-top: 0;
+    }
+
     .about_buttons {
         gap: 15px; 
         margin-top: 20px; 
@@ -54,9 +61,8 @@
         font-size: 1.3rem;
     }
 
-    
     /* SKILLS SECTION */
-    
+
     .skills_container {
         grid-template-columns: 1fr;
         gap: 1.2rem;
@@ -103,6 +109,7 @@
         flex-direction: column;
         gap: 0;
     }
+
 
 }
 
@@ -173,7 +180,8 @@
 /* FOR RESPONSIVE NAVBAR */
 
 @media screen and (max-width: 952px) {
-  nav {
+
+    nav {
         height: 60px;
     }
 
@@ -190,7 +198,6 @@
     font-size: 1rem;
     }
 }
-
 
 @media screen and (max-width: 858px) {
   .checkButton { display: block; }
@@ -225,6 +232,8 @@
     left: 0;
     opacity: 1;
     visibility: visible;
+    top: 60px; 
+    height: calc(100vh - 60px);
   }
 
   .logo { display: none; }
